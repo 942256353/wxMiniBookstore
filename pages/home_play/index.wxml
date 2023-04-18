@@ -5,6 +5,18 @@
         <text>跳过</text>
     </view>
     <!-- 图片1 -->
+    <image class="" src="" mode="">
+
+    </image>
     <!-- 图片2 -->
+     <image class="" src="" mode="">
+        
+    </image>
     <!-- 底部 -->
+     <view class="">
+         <text class="">
+            阅读
+         </text>
+        <view></view>
+    </view>
 </view>

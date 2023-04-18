@@ -1,0 +1,45 @@
+{
+    "entryPagePath": "pages/index/index",
+    "pages": [
+        "pages/home_play/index",
+        "pages/list/list",
+        "pages/index/index"
+    ],
+    "subpackages": [
+        {
+            "root": "packageA",
+            "pages": [
+                "pages/news/index",
+                "pages/user/index"
+            ]
+        }
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#FFA500",
+        "navigationBarTitleText": "我的小程序",
+        "navigationBarTextStyle": "black",
+        "backgroundColor": "#ddd"
+    },
+    "tabBar": {
+        "color": "#666",
+        "selectedColor": "#66ccff",
+        "backgroundColor": "#EAEAEA",
+        "list": [
+            {
+                "text": "首页",
+                "pagePath": "pages/index/index",
+                "iconPath": "images/index.png",
+                "selectedIconPath": "images/indexS.png"
+            },
+            {
+                "text": "列表",
+                "pagePath": "pages/list/list",
+                "iconPath": "images/list.png",
+                "selectedIconPath": "images/listS.png"
+            }
+        ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

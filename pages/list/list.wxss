@@ -1,0 +1,5 @@
+/**index.wxss**/
+.txt1{
+    color: rgb(60, 231, 44);
+    font-size: 40rpx;
+}

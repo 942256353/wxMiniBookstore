@@ -1,0 +1,46 @@
+<!-- index.wxml -->
+<view class="container">
+  <view class="txt1" data-id="{{vid}}">{{msg}}</view>
+  <view>列表</view>
+  <scroll-view class="scroll_wrap" scroll-y bindscrolltolower="bindscrolltolower" refresher-triggered="{{refshStatus}}" bindrefresherrefresh="bindrefresherrefresh" refresher-enabled>
+    <view class="list" wx:for="{{list}}" wx:key="{{item.id}}">
+      <view class="title">{{item.name}}</view>
+      <view wx:if="{{item.age<=10}}">幼年</view>
+      <view wx:elif="{{item.age<=18}}">少年</view>
+      <view wx:else="">成年</view>
+      <view class="tags">
+        <view wx:for="{{item.tags}}" wx:for-item="tagItem" wx:for-index="tagIndex" wx:key="tagIndex">
+          {{tagItem}}
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  <button bindtap="handClickEvent" data-id="10" myid="100">点击触发</button>
+  <button bindtap="handClickToEvent" data-id="10" myid="100">点击跳转</button>
+  <navigator url="/pages/user/index" open-type="navigate">组件跳转</navigator>
+  <view>表单输入框</view>
+  <input type="text" value="{{usernameVal}}" bindinput="usernameInput" placeholder="输入账号" />
+  <input type="text" password value="{{passwordVal}}" bindinput="passwordInput" placeholder="输入密码" />
+  <!-- <input class="weui-input" type="idcard" placeholder="身份证输入键盘" /> -->
+  <button bindtap="submitHandle">登录</button>
+  <view>表单单选 性别</view>
+  <radio-group bindchange="radioChange">
+    <label for="1">
+      <radio id="1" value="1" />
+      男
+    </label>
+    <label for="2">
+      <radio id="2" value="2" />
+      女
+    </label>
+  </radio-group>
+  <view class="weui-cells weui-cells_after-title">
+      <checkbox-group bindchange="checkboxChange">
+       
+        <label class="weui-cell weui-check__label" wx:for="{{hobbyList}}" wx:key="{{item.id}}">
+          <checkbox value="{{item.id}}" checked="{{item.name==='画画'}}"/>{{item.name}}
+        </label>
+        
+      </checkbox-group>
+    </view>
+</view>

@@ -1,0 +1,22 @@
+/**index.wxss**/
+.txt1{
+    color: blueviolet;
+    font-size: 40rpx;
+}
+.list{
+  width: 80%;
+  background-color: antiquewhite;
+  border-radius: 10rpx;
+  padding: 40rpx;
+  margin-bottom: 30rpx;
+  /* height: 30rpx; */
+}
+.tags{
+  display: flex;
+  border: 2rpx solid antiquewhite;
+}
+.scroll_wrap{
+  margin-top: 50rpx;
+  height: 300px;
+  background-color: aquamarine;
+}

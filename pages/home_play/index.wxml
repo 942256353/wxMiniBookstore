@@ -1,0 +1,8 @@
+<view class="content">
+    <!-- 右上角倒计时 -->
+    <view>
+        <text>3</text>
+         <text>跳过</text>
+    </view>
+
+</view>

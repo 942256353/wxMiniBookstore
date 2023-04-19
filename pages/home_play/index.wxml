@@ -1,22 +1,21 @@
 <view class="content">
     <!-- 右上角倒计时 -->
-    <view>
-        <text>3</text>
-        <text>跳过</text>
+    <view class="num_top">
+        <view class="right_wrap">
+            <text> {{count}} </text>
+            <text bindtap="handleOverEvent"> 跳过 </text>
+        </view>
     </view>
     <!-- 图片1 -->
-    <image class="" src="" mode="">
-
-    </image>
+    <image class="img1" src="../../public/images/img_light.png" mode="widthFix"></image>
     <!-- 图片2 -->
-     <image class="" src="" mode="">
-        
-    </image>
+    <image class="img2" src="../../public/images/img_txt.png" mode="widthFix"></image>
     <!-- 底部 -->
-     <view class="">
-         <text class="">
-            阅读
-         </text>
-        <view></view>
+    <view class="play_bottom">
+        <text class="txt1">悦读</text>
+        <view class="right_txt">
+            <view class="txt2">{{month}}月</view>
+            <view class="txt3">{{timeStr}}</view>
+        </view>
     </view>
 </view>

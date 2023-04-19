@@ -1,7 +1,0 @@
-
-<!--index.wxml-->
-<view class="container">
-  list
-  <view class="txt1">{{this.data.msg}}</view>
-  
-</view>

@@ -1,0 +1,18 @@
+<view class="login_wrap">
+    <image class="avatar" src="../../public/images/avatar.png" mode="widthFix"></image>
+    <view class="form_wrap">
+        <view class="item_input flex">
+            <van-icon class="icon" name="manager-o" />
+            <input class="input_box" type="text" value="{{username}}" placeholder-class="input-placeholder" bindinput="setInputVal" data-key="username" placeholder="请输入用户名" />
+        </view>
+        <view class="item_input flex">
+            <van-icon class="icon" name="bulb-o" />
+            <input class="input_box" password="{{true}}" value="{{password}}" type="text" bindinput="setInputVal" placeholder-class="input-placeholder" data-key="password" placeholder="请输入密码" />
+        </view>
+       <button class="btn" bindtap="handleLR">{{loginStatus?"登录":"注册"}}</button>
+       <view class="regist"  bindtap="handleSwitchStatus">{{loginStatus?"立即注册":"去登陆"}}</view>
+        <!-- <button 	open-type="contact">打开客服</button>
+        <button open-type="getPhoneNumber" bindgetphonenumber="getPhone">获取手机号</button>
+        <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">获取用户信息</button> -->
+    </view>
+</view>

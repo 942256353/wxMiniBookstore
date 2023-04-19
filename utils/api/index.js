@@ -1,13 +1,7 @@
-import {get,post} from "../request"
-function login(data){
-    return post("/login",data);
+import {get} from "../request"
+function getMoodListAPI(params){
+    return get('/mood/list',params)
 }
-
-function register(data){
-    return post("/register",data);
-}
-
 export {
-    login,
-    register
+    getMoodListAPI
 }

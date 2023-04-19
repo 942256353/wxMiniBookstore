@@ -2,41 +2,55 @@
     "entryPagePath": "pages/home_play/index",
     "pages": [
         "pages/home_play/index",
-        "pages/list/list",
-        "pages/index/index"
+        "pages/index/index",
+        "pages/books/index",
+        "pages/news/index",
+        "pages/my/index",
+        "pages/login/index"
     ],
     "subpackages": [
         {
             "root": "packageA",
             "pages": [
-                "pages/news/index",
-                "pages/user/index"
+               
             ]
         }
     ],
     "window": {
         "backgroundTextStyle": "light",
         "navigationBarBackgroundColor": "#FFA500",
-        "navigationBarTitleText": "我的小程序",
-        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "小谢书城",
+        "navigationBarTextStyle": "white",
         "backgroundColor": "#ddd"
     },
     "tabBar": {
-        "color": "#666",
+        "color": "#b3b3b3",
         "selectedColor": "#66ccff",
-        "backgroundColor": "#EAEAEA",
+        "backgroundColor": "#ffffff",
         "list": [
             {
                 "text": "首页",
                 "pagePath": "pages/index/index",
-                "iconPath": "images/index.png",
-                "selectedIconPath": "images/indexS.png"
+                "iconPath": "./public/images/index.png",
+                "selectedIconPath": "./public/images/index_active.png"
             },
             {
-                "text": "列表",
-                "pagePath": "pages/list/list",
-                "iconPath": "images/list.png",
-                "selectedIconPath": "images/listS.png"
+                "text": "书城",
+                "pagePath": "pages/books/index",
+                "iconPath": "./public/images/books.png",
+                "selectedIconPath": "./public/images/books_active.png"
+            },
+            {
+                "text": "消息",
+                "pagePath": "pages/news/index",
+                "iconPath": "./public/images/news.png",
+                "selectedIconPath": "./public/images/news_active.png"
+            },
+            {
+                "text": "我的",
+                "pagePath": "pages/my/index",
+                "iconPath": "./public/images/my.png",
+                "selectedIconPath": "./public/images/my_active.png"
             }
         ]
     },

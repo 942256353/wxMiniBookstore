@@ -1,7 +1,0 @@
-<!--index.wxml-->
-<view>
-    <text>
-  user页面
-</text>
-<button bindtap="handClickToEvent" data-id="10" myid="100">点击跳转</button>
-</view>

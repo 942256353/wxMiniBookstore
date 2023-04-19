@@ -1,0 +1,24 @@
+{
+  "name": "wxMiniBookstore",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "dependencies": {
+    "vant-weapp": "^0.5.29"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/942256353/wxMiniBookstore.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/942256353/wxMiniBookstore/issues"
+  },
+  "homepage": "https://github.com/942256353/wxMiniBookstore#readme"
+}

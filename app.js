@@ -16,7 +16,8 @@ App({
       console.log(msg)
     },
     globalData:{
-      baseUrl:"http://xiaoxie.free.idcfengye.com/api"
+      // baseUrl:"http://xiaoxie.free.idcfengye.com/api"
+      baseUrl:"http://127.0.0.1:612"
     },
     getUserInfo(){
       console.log("全局方法")

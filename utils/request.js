@@ -15,30 +15,45 @@ function request({
             method: method,
             header: { ...header },
             success(res) {
-                wx.hideLoading();
-                resolve(res.data)
+              
+                if (res.data?.code === 200) {
+                    resolve(res.data)
+                } else {
+                    wx.showToast({
+                        title: (res.data&&res.data.message)||'请求失败',
+                        icon: 'none'
+                    })
+                    reject(err)
+                }
+                setTimeout(_=>{
+                    wx.hideLoading();
+                },500)
             },
             fail(err) {
                 wx.hideLoading();
+                wx.showToast({
+                    title: err||'请求失败',
+                    icon: 'none'
+                })
                 reject(err)
             }
         })
     })
 }
 
-module.exports =  {
+module.exports = {
     get(url, data) {
         return request({
-            url, 
+            url,
             data,
-            method:'GET'
+            method: 'GET'
         })
     },
     post(url, data) {
         return request({
             url,
             data,
-         method:'POST'
+            method: 'POST'
         })
     }
 }
